@@ -1,11 +1,11 @@
-name: open in cloud shell
+name: "Comment Bot"
 on: pull_request
 jobs:
-  open-in-cloud-shell-comment:
-    name: open in cloud shell
+  commenter:
+    name: open-in-cloudshell
     runs-on: ubuntu-latest
     steps:
-      - name: comment PR
+      - name: Post Comment
         uses: unsplash/comment-on-pr@85a56be792d927ac4bfa2f4326607d38e80e6e60
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
