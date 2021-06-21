@@ -10,6 +10,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-            msg: "branch name: ${{ github.head_ref }}"
+          msg: "branch name: ${{ github.head_ref }}"
             # msg: "https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/GoogleCloudPlatform/cloud-ops-sandbox.git&cloudshell_git_branch=v0.6.0&shellonly=true&cloudshell_image=gcr.io/stackdriver-sandbox-230822/cloudshell-image/uncertified:v0.6.0"
           check_for_duplicate_msg: false
