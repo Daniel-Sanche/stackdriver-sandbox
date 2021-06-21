@@ -1,12 +1,12 @@
-name: comment-on-pr example
+name: open in cloud shell
 on: pull_request
 jobs:
-  example:
-    name: sample comment
+  open-in-cloud-shell-comment:
+    name: open in cloud shell
     runs-on: ubuntu-latest
     steps:
       - name: comment PR
-        uses: unsplash/comment-on-pr@master
+        uses: unsplash/comment-on-pr@85a56be792d927ac4bfa2f4326607d38e80e6e60
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
